@@ -1112,7 +1112,7 @@ ul {
   gap: 4px;
   border-radius: 4px;
   padding: 8px;
-  background-color: var(--white);
+  background-color: transparent;
 }
 
 .account-card {
@@ -1166,9 +1166,9 @@ ul {
 .left-wrapper {
   position: relative;
   display: flex;
-  padding: 30px;
+  padding: 40px;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 4px 20px 0px rgba(13, 7, 45, 0.06);
@@ -1176,6 +1176,7 @@ ul {
 
 .account-single-wrapper .bottom-img {
   padding-top: 10px;
+  max-width: 300px;
 }
 
 .account-content-review {
@@ -1183,15 +1184,14 @@ ul {
 }
 
 .account-content-review .review-by {
-  padding-top: 10px;
-  padding-bottom: 9.5px;
+  padding: 20px 0px;
   display: flex;
   align-items: start;
   gap: 6px;
 }
 
 .account-content-review li {
-  padding-top: 10.5px;
+  padding-top: 16px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -2211,6 +2211,15 @@ ul {
 }
 
 
+.banner-discription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  gap: 20px;
+}
+
+
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2252,7 +2261,13 @@ ul {
 
 @media (min-width: 767px) and (max-width: 991px) {
 
-
+.banner-discription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
 
   .beste-content .beste-connect-content {
     gap: 5px;
@@ -2269,6 +2284,20 @@ ul {
     flex-direction: column-reverse;
   }
 
+  .banner-discription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+.banner-heading {
+  text-align: center !important;
+}
+.banner-content {
+  text-align: center !important;
+}
+
   .tabs-area {
     padding-bottom: 0px;
   }
@@ -2276,6 +2305,7 @@ ul {
   .sm-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .lg-block {
@@ -2567,7 +2597,7 @@ ul {
   }
 
   .banner-area .banner-heading {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .banner-area .banner-content {
@@ -2614,11 +2644,18 @@ ul {
 .account-single-wrapper .winning {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  align-items: center;
+  gap: 60px;
 
   @media screen and (max-width: 991px) {
     flex-direction: column;
   }
+}
+
+.list-unstyled {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* btn gray */
