@@ -1774,7 +1774,11 @@ ul {
  
 }
 
-
+#myDropdown {
+  border: none;
+  padding: 6px;
+  margin: 0px;
+}
 
 
 .footer-area {

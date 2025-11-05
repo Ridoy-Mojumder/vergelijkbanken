@@ -7,7 +7,7 @@
     <meta name="description" content="boekhouder" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!-- FavIcon CSS -->
-    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="../favicon.ico" type="image/gif" sizes="16x16">
     <!--Google Fonts CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,35 +92,13 @@
                     <!-- Dropdown Menu -->
                     <div class="d-flex justify-content-center align-items-center gap-4 sm-none lg-block" style="font-size: 16px; line-height: 16px;">
                     <!-- Compare -->
-                    <div class="dropdown" >
-                        <a
-                        class=" text-decoration-none text-dark fw-semibold"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        >
-                        Compare
-                        <svg
-                            width="1em"
-                            height="1em"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="ms-1"
-                        >
-                            <path
-                            d="M22.577 8.368l-9.562 9.225a1.438 1.438 0 01-.466.301 1.48 1.48 0 01-1.566-.301L1.42 8.368C1.15 8.108 1 7.755 1 7.388c0-.368.151-.72.42-.98.27-.26.636-.407 1.017-.407.38 0 .746.146 1.016.406L12 14.654l8.547-8.248c.27-.26.635-.406 1.016-.406s.747.146 1.016.406c.27.26.421.613.421.98 0 .368-.151.72-.42.98l-.003.002z"
-                            fill="currentColor"
-                            ></path>
-                        </svg>
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Laptops</a></li>
-                        <li><a class="dropdown-item" href="#">Mobiles</a></li>
-                        <li><a class="dropdown-item" href="#">Headphones</a></li>
-                        </ul>
-                    </div>
+                    <select name="myDropdown" id="myDropdown" >
+                        <option value="" disabled selected hidden>Vergelijken</option>
+                        <option value="abn-amro">ABN AMRO</option>
+                        <option value="bunq">Bunq Bank</option>
+                        <option value="vivid">Vivid Bank</option>
+                        <option value="ing">ING Bank</option>
+                    </select>
 
                     <!-- Reviews -->
                     <div class="dropdown">
