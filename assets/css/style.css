@@ -99,6 +99,10 @@ ul {
   padding: 0;
 }
 
+.w-full {
+  width: 100%;
+}
+
 /*Defalt Margin and padding*/
 
 .mt-10 {
@@ -1215,6 +1219,11 @@ ul {
     padding-top: 20px;
   }
 
+  .account-content-review {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .account-single-wrapper.account-single-full-width {
     padding: 20px;
   }
@@ -1225,6 +1234,7 @@ ul {
 
   .account-single-wrapper.account-single-full-width .winning {
     flex-direction: column;
+    gap: 0px;
   }
 }
 
@@ -2595,6 +2605,10 @@ ul {
     flex-direction: column-reverse;
   }
 
+  .sm-flex {
+    width: 100%;
+  }
+
 
   .sm-none {
     display: none !important;
@@ -2649,10 +2663,11 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
 
   @media screen and (max-width: 991px) {
     flex-direction: column;
+    gap: 0px;
   }
 }
 
@@ -2707,5 +2722,8 @@ ul {
   .col-md-4 {
     flex: 1 1 100% !important;
     max-width: 100%;
+  }
+  .sm-flex {
+    width: 100%;
   }
 }
